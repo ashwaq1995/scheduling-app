@@ -97,6 +97,10 @@ Patient App / Web
 
 ---
 
+📄 About This Repository
+
+This repository demonstrates backend and integration design for a scalable healthcare scheduling application.
+It focuses on API development, system reliability, and real-time data synchronization across multiple providers.
 
 ### 🏗️ System Architecture Overview
 
@@ -129,8 +133,4 @@ Patient App / Web
                 └───────────────────────────┘
 
 
-This repository demonstrates backend and integration design for a scalable healthcare scheduling application.
-It focuses on **API development**, **system reliability**, and **real-time data synchronization** across multiple providers.
-
----
 
