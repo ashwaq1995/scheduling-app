@@ -97,7 +97,37 @@ Patient App / Web
 
 ---
 
-### 📄 About This Repository
+
+### 🏗️ System Architecture Overview
+
+```text
+                ┌───────────────────────────┐
+                │       Patient App         │
+                │   (Web / Mobile Client)   │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │     Scheduling API         │
+                │     (Spring Boot)          │
+                ├───────────────────────────┤
+                │ Appointment Service        │
+                │ Provider Service           │
+                │ Notification Service       │
+                │ Logging & Monitoring       │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │ External HIS System (API) │
+                └─────────────┬─────────────┘
+                              │
+                              ▼
+                ┌───────────────────────────┐
+                │ PostgreSQL / ELK Stack    │
+                │ (Logs, Requests, Errors)  │
+                └───────────────────────────┘
+
 
 This repository demonstrates backend and integration design for a scalable healthcare scheduling application.
 It focuses on **API development**, **system reliability**, and **real-time data synchronization** across multiple providers.
